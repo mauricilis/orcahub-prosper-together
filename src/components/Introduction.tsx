@@ -1,4 +1,6 @@
 
+import { YouTube } from "lucide-react";
+
 const Introduction = () => {
   return (
     <section className="w-full py-12 md:py-24 bg-orca-100">
@@ -10,6 +12,20 @@ const Introduction = () => {
           <p className="text-xl text-gray-700">
             Criado para empresários que entendem que crescer é bom — mas prosperar junto é melhor.
           </p>
+          
+          {/* YouTube Video Player */}
+          <div className="mt-8 mb-10 relative aspect-video rounded-xl overflow-hidden shadow-xl border border-gray-200">
+            <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+              <iframe 
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Substitua esta URL pelo ID do seu vídeo no YouTube
+                title="ORCAHUB - Conexão. Relacionamento. Prosperidade."
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+          
           <div className="pt-4">
             <p className="text-lg text-gray-600 italic">
               "Você pode até crescer sozinho. Mas prosperar… exige conexão."
