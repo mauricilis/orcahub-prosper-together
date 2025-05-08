@@ -14,19 +14,28 @@ const CallToAction = () => {
             />
           </div>
           
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-gray-800">
-              Você não está sendo convidado apenas para um grupo de networking.
-            </h2>
-            <p className="text-xl text-gray-600">
-              Está sendo convidado para fazer parte de um ecossistema construído por quem carrega 55 anos de história ao lado de mais de 500 empresários.
-            </p>
-            <p className="text-xl text-gray-600">
-              A Orcatéa não conecta empresas por acaso — ela conecta com propósito, método e visão de futuro.
-            </p>
-            <p className="text-xl text-gray-600 font-medium">
-              E o ORCAHUB é a extensão viva desse compromisso: transformar conexões em prosperidade.
-            </p>
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="md:w-1/2 space-y-6 text-left">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-gray-800">
+                Você não está sendo convidado apenas para um grupo de networking.
+              </h2>
+              <p className="text-xl text-gray-600">
+                Está sendo convidado para fazer parte de um ecossistema construído por quem carrega 55 anos de história ao lado de mais de 500 empresários.
+              </p>
+              <p className="text-xl text-gray-600">
+                A Orcatéa não conecta empresas por acaso — ela conecta com propósito, método e visão de futuro.
+              </p>
+              <p className="text-xl text-gray-600 font-medium">
+                E o ORCAHUB é a extensão viva desse compromisso: transformar conexões em prosperidade.
+              </p>
+            </div>
+            <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
+              <img 
+                src="/lovable-uploads/6e943a24-554c-45f9-a427-b78203aeebc8.png" 
+                alt="Executive" 
+                className="h-auto w-full max-w-xs md:max-w-sm rounded-lg shadow-md"
+              />
+            </div>
           </div>
           
           <div className="pt-8">
