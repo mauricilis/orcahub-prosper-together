@@ -1,5 +1,5 @@
 
-import { YouTube } from "lucide-react";
+import { Youtube } from "lucide-react";
 
 const Introduction = () => {
   return (
