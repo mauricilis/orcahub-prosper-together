@@ -10,11 +10,18 @@ const Header = () => {
           alt="ORCAHUB Logo"
           className="h-10 w-auto"
         />
-        <nav className="hidden md:flex items-center space-x-6">
-          <a href="#benefits" className="text-gray-700 hover:text-orca transition-colors">Benefícios</a>
-          <a href="#testimonials" className="text-gray-700 hover:text-orca transition-colors">Depoimentos</a>
-          <a href="#pricing" className="text-gray-700 hover:text-orca transition-colors">Preços</a>
-        </nav>
+        <div className="flex items-center gap-6">
+          <nav className="hidden md:flex items-center space-x-6">
+            <a href="#benefits" className="text-gray-700 hover:text-orca transition-colors">Benefícios</a>
+            <a href="#testimonials" className="text-gray-700 hover:text-orca transition-colors">Depoimentos</a>
+            <a href="#pricing" className="text-gray-700 hover:text-orca transition-colors">Preços</a>
+          </nav>
+          <img
+            src="/lovable-uploads/bb05f472-42ea-416c-b962-aa1249333dfe.png"
+            alt="Orcatéa Logo"
+            className="h-8 w-auto hidden md:block"
+          />
+        </div>
       </div>
     </header>
   );
