@@ -18,7 +18,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="w-full h-screen flex flex-col justify-center relative overflow-hidden pt-20">
+    <section className="w-full h-screen flex flex-col justify-center relative overflow-hidden pt-24">
       {/* Parallax background image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
