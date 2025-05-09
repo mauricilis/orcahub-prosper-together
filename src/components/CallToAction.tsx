@@ -1,10 +1,37 @@
 
 import { Button } from "@/components/ui/button";
+import { useEffect, useRef } from "react";
 
 const CallToAction = () => {
+  const parallaxRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      if (parallaxRef.current) {
+        const scrollPosition = window.scrollY;
+        parallaxRef.current.style.transform = `translateY(${scrollPosition * 0.05}px)`;
+      }
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className="w-full py-16 md:py-24 bg-gray-50">
-      <div className="container px-4 md:px-6 text-center animate-fade-in">
+    <section className="w-full py-16 md:py-24 bg-gray-50 relative overflow-hidden">
+      {/* Parallax background image */}
+      <div 
+        className="absolute inset-0 opacity-10 z-0"
+        ref={parallaxRef}
+      >
+        <img 
+          src="/lovable-uploads/6e943a24-554c-45f9-a427-b78203aeebc8.png" 
+          alt="Executive Background" 
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+      
+      <div className="container px-4 md:px-6 text-center animate-fade-in relative z-10">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="flex flex-col items-center justify-center mb-8">
             <img 
@@ -15,7 +42,7 @@ const CallToAction = () => {
           </div>
           
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="md:w-1/2 space-y-6 text-left">
+            <div className="md:w-3/5 space-y-6 text-left">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-gray-800">
                 Você não está sendo convidado apenas para um grupo de networking.
               </h2>
@@ -29,11 +56,11 @@ const CallToAction = () => {
                 E o ORCAHUB é a extensão viva desse compromisso: transformar conexões em prosperidade.
               </p>
             </div>
-            <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
+            <div className="md:w-2/5 flex justify-center mt-6 md:mt-0">
               <img 
                 src="/lovable-uploads/6e943a24-554c-45f9-a427-b78203aeebc8.png" 
                 alt="Executive" 
-                className="h-auto w-full max-w-xs md:max-w-sm rounded-lg shadow-md"
+                className="h-auto w-full rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
