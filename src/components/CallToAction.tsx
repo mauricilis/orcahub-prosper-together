@@ -1,37 +1,10 @@
 
 import { Button } from "@/components/ui/button";
-import { useEffect, useRef } from "react";
 
 const CallToAction = () => {
-  const parallaxRef = useRef<HTMLDivElement>(null);
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      if (parallaxRef.current) {
-        const scrollPosition = window.scrollY;
-        parallaxRef.current.style.transform = `translateY(${scrollPosition * 0.05}px)`;
-      }
-    };
-    
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <section className="w-full py-16 md:py-24 bg-gray-50 relative overflow-hidden">
-      {/* Parallax background image */}
-      <div 
-        className="absolute inset-0 opacity-10 z-0"
-        ref={parallaxRef}
-      >
-        <img 
-          src="/lovable-uploads/6e943a24-554c-45f9-a427-b78203aeebc8.png" 
-          alt="Executive Background" 
-          className="w-full h-full object-cover object-center"
-        />
-      </div>
-      
-      <div className="container px-4 md:px-6 text-center animate-fade-in relative z-10">
+    <section className="w-full py-16 md:py-24 bg-gray-50 relative">
+      <div className="container px-4 md:px-6 text-center animate-fade-in">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="flex flex-col items-center justify-center mb-8">
             <img 
@@ -60,7 +33,7 @@ const CallToAction = () => {
               <img 
                 src="/lovable-uploads/6e943a24-554c-45f9-a427-b78203aeebc8.png" 
                 alt="Executive" 
-                className="h-auto w-full rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
+                className="h-auto w-full rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 border-4 border-cta"
               />
             </div>
           </div>
