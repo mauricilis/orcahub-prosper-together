@@ -6,11 +6,16 @@ const CallToAction = () => {
     <section className="w-full py-16 md:py-24 bg-gray-50 relative">
       <div className="container px-4 md:px-6 text-center animate-fade-in">
         <div className="max-w-4xl mx-auto space-y-8">
-          <div className="flex flex-col items-center justify-center mb-8">
+          <div className="flex flex-col md:flex-row items-center justify-center mb-8 gap-4">
             <img 
               src="/lovable-uploads/29e50ba4-e231-4b67-b9b9-ce7ef25c6951.png" 
               alt="Orcatéa Logo" 
-              className="h-32 md:h-40 w-auto mb-6"
+              className="h-32 md:h-40 w-auto"
+            />
+            <img 
+              src="/lovable-uploads/fe25c206-671e-4d79-9604-5916be4b453f.png" 
+              alt="Selo 55 anos Orcatéa" 
+              className="h-24 md:h-32 w-auto animate-pulse-slow"
             />
           </div>
           
