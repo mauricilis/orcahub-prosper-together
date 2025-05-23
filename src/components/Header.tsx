@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -32,7 +31,6 @@ const Header = () => {
         <div className="flex items-center gap-6">
           <nav className="hidden md:flex items-center space-x-6">
             <a href="#benefits" className="text-gray-700 hover:text-cta transition-colors font-medium text-base">Benefícios</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-cta transition-colors font-medium text-base">Depoimentos</a>
             <a href="#pricing" className="text-gray-700 hover:text-cta transition-colors font-medium text-base">Fazer parte</a>
           </nav>
           <img
