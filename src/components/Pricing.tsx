@@ -45,7 +45,7 @@ const Pricing = () => {
               </div>
               <div className="text-sm text-gray-500 mt-1">Parcelamento em até 12x no cartão de crédito</div>
             </div>
-            <a href="https://pay.hotmart.com/V99888478V" target="_blank" rel="noopener noreferrer" className="block">
+            <a href="https://pay.hotmart.com/H99901935J" target="_blank" rel="noopener noreferrer" className="block">
               <Button className="w-full bg-cta hover:bg-cta-hover text-white font-semibold py-6 rounded-lg text-lg transition-all">
                 Quero fazer parte da rede ORCAHUB
               </Button>
