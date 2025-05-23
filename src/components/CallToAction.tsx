@@ -47,9 +47,11 @@ const CallToAction = () => {
             <p className="mb-8 text-lg text-gray-600">
               Clique abaixo e entre agora para a rede que cresce com inteligência, e impulsiona quem realmente faz para prosperar.
             </p>
-            <Button className="bg-cta hover:bg-cta-hover text-white font-semibold py-6 px-8 rounded-lg text-lg transition-all shadow-lg hover:shadow-xl">
-              Quero fazer parte da rede ORCAHUB
-            </Button>
+            <a href="https://pay.hotmart.com/V99888478V" target="_blank" rel="noopener noreferrer" className="inline-block">
+              <Button className="bg-cta hover:bg-cta-hover text-white font-semibold py-6 px-8 rounded-lg text-lg transition-all shadow-lg hover:shadow-xl">
+                Quero fazer parte da rede ORCAHUB
+              </Button>
+            </a>
           </div>
         </div>
       </div>

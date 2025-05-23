@@ -44,9 +44,11 @@ const Hero = () => {
         </div>
         
         <div className="w-full max-w-sm md:max-w-md mt-6">
-          <Button className="w-full bg-cta hover:bg-cta-hover text-white font-semibold py-6 rounded-lg text-lg transition-all shadow-lg hover:shadow-xl">
-            Quero fazer parte da rede ORCAHUB
-          </Button>
+          <a href="https://pay.hotmart.com/V99888478V" target="_blank" rel="noopener noreferrer" className="block">
+            <Button className="w-full bg-cta hover:bg-cta-hover text-white font-semibold py-6 rounded-lg text-lg transition-all shadow-lg hover:shadow-xl">
+              Quero fazer parte da rede ORCAHUB
+            </Button>
+          </a>
         </div>
       </div>
       
