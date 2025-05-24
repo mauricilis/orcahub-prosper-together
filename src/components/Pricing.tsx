@@ -38,12 +38,12 @@ const Pricing = () => {
               <h3 className="text-2xl font-bold">Anuidade ORCAHUB</h3>
             </div>
             <div className="text-center mb-6">
-              <div className="text-lg line-through text-gray-500">De R$497</div>
+              <div className="text-lg line-through text-gray-500">De R$ 595,00</div>
               <div className="flex items-center justify-center gap-2">
-                <span className="text-4xl font-bold">R$247</span>
-                <span className="text-gray-600">anuais</span>
+                <span className="text-4xl font-bold">R$ 247</span>
+                <span className="text-gray-600">à vista</span>
               </div>
-              <div className="text-sm text-gray-500 mt-1">Parcelamento em até 12x no cartão de crédito</div>
+              <div className="text-sm text-gray-500 mt-1">ou em até 12x no cartão de crédito</div>
             </div>
             <a href="https://pay.hotmart.com/H99901935J" target="_blank" rel="noopener noreferrer" className="block">
               <Button className="w-full bg-cta hover:bg-cta-hover text-white font-semibold py-6 rounded-lg text-lg transition-all">
